@@ -89,8 +89,8 @@ void DetalleVenta::cargar() {
     setCantidad(cantidad);
 
     setEstadoDetalleVenta(true);
-
-void DetalleVenta::mostrar() const {
+}
+void DetalleVenta::mostrar(){
     cout << "ID Venta: " << getIDVenta() << endl;
     cout << "ID Producto: " << getIDProducto() << endl;
     cout << "ID Lista Precio: " << getIDListaPrecio() << endl;
@@ -116,4 +116,5 @@ bool DetalleVenta::leerDisco(int pos) {
     fclose(p);
     return ok;
 }
+
 
