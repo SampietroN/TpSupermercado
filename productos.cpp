@@ -1,10 +1,10 @@
 #include <iostream>
 using namespace std;
-#include "Producto.h"
+#include "productos.h"
 #include <cstring>
 
 
-// Constructor
+
 Producto::Producto() {
     _IDProducto = 0;
     strcpy(_nombreProducto, "");
@@ -14,7 +14,7 @@ Producto::Producto() {
     _estadoProducto = true;
 }
 
-// Destructor
+
 Producto::~Producto() {
 
 }
@@ -61,8 +61,15 @@ bool Producto::getEstadoProducto() const {
      return _estadoProducto;
       }
 
-// Método cargar
+
 void Producto::cargar() {
+    int id ;
+    int tipo;
+    int stock;
+    float costo;
+    char nombre [50];
+
+
     cout << "ID del producto: ";
     cin >> id;
     setIDProducto(id);
@@ -86,14 +93,13 @@ void Producto::cargar() {
     setEstadoProducto(true);
 }
 
-// Método mostrar
-void Producto::mostrar() const {
+void Producto::mostrar() {
     cout << "ID: " << getIDProducto() << endl;
     cout << "Nombre: " << getNombreProducto() << endl;
     cout << "Tipo: " << getTipoProducto() << endl;
     cout << "Stock: " << getStock() << endl;
     cout << "Costo: $" << getCosto() << endl;
-    cout << "Estado: " << (getEstadoProducto ? "Activo" : "Inactivo") << endl;
+    cout << "Estado: " << (getEstadoProducto() ? "Activo" : "Inactivo") << endl;
 }
 
 
