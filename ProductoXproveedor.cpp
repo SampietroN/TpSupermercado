@@ -2,14 +2,14 @@
 #include <iostream>
 using namespace std;
 
-// Constructor
+
 ProductoXProveedor::ProductoXProveedor() {
     _IDProducto = 0;
     _IDProveedor = 0;
     _precioCosto = 0.0;
 }
 
-// Destructor
+
 ProductoXProveedor::~ProductoXProveedor() {}
 
 // Setters
@@ -38,7 +38,7 @@ float ProductoXProveedor::getPrecioCosto() const {
     return _precioCosto;
 }
 
-// Método cargar
+
 void ProductoXProveedor::cargar() {
     int idProd, idProv;
     float costo;
@@ -56,7 +56,7 @@ void ProductoXProveedor::cargar() {
     setPrecioCosto(costo);
 }
 
-// Método mostrar
+
 void ProductoXProveedor::mostrar() const {
     cout << "ID Producto: " << getIDProducto() << endl;
     cout << "ID Proveedor: " << getIDProveedor() << endl;
@@ -64,7 +64,7 @@ void ProductoXProveedor::mostrar() const {
 }
 
 
-// Guardar en disco
+
 bool ProductoXProveedor::escribirDisco() {
     FILE* p = fopen("productoXproveedor.dat", "ab");
     if (p == nullptr) return false;
@@ -73,7 +73,7 @@ bool ProductoXProveedor::escribirDisco() {
     return ok;
 }
 
-// Leer desde disco
+
 bool ProductoXProveedor::leerDisco(int pos) {
     FILE* p = fopen("productoXproveedor.dat", "rb");
     if (p == nullptr) return false;
@@ -82,4 +82,3 @@ bool ProductoXProveedor::leerDisco(int pos) {
     fclose(p);
     return ok;
 }
-
