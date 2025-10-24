@@ -70,14 +70,14 @@ void Compra::cargar() {
     setIDProveedor(idProv);
 
     cout << "Fecha de la compra:" << endl;
-    fecha.cargar();  // Asumo que la clase Fecha tiene este método
+    fecha.cargar();  
     setFechaCompra(fecha);
 
     cout << "Total de la compra: ";
     cin >> total;
     setTotalCompra(total);
 
-    setEstadoCompra(true);  // Activa por defecto
+    setEstadoCompra(true);  
 }
 
 
@@ -109,3 +109,4 @@ bool Compra::leerDisco(int pos) {
     fclose(p);
     return ok;
 }
+
