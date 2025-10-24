@@ -64,7 +64,7 @@ void Precio::mostrar() const {
     cout << "Precio: $" << getPrecio() << endl;
 }
 
-// Guardar en disco
+
 bool Precio::escribirDisco(int pos) {
     FILE* p = fopen("precio.dat", "rb+");
     if (p == nullptr) return false;
@@ -74,7 +74,7 @@ bool Precio::escribirDisco(int pos) {
     return ok;
 }
 
-// Leer desde disco
+
 bool Precio::leerDisco(int pos) {
     FILE* p = fopen("precio.dat", "rb");
     if (p == nullptr) return false;
