@@ -1,4 +1,5 @@
 #include "Venta.h"
+#include "ClaseFecha.h"
 #include <iostream>
 #include <cstring>
 using namespace std;
@@ -87,7 +88,7 @@ void Venta::cargar() {
     setIDEmpleado(idEmpleado);
 
     cout << "Fecha de la venta:" << endl;
-    fecha.cargar();
+    fecha.Cargar();
     setFechaVenta(fecha);
 
     cout << "Precio total: ";
@@ -97,12 +98,12 @@ void Venta::cargar() {
     setEstadoVenta(true);
 }
 
-void Venta::mostrar() const {
+void Venta::mostrar(){
     cout << "ID Venta: " << getIDVenta() << endl;
     cout << "DNI Cliente: " << getDNI() << endl;
     cout << "ID Empleado: " << getIDEmpleado() << endl;
     cout << "Fecha: ";
-    getFechaVenta().mostrar();
+    getFechaVenta().Mostrar();
     cout << "Precio Total: $" << getPrecioTotal() << endl;
     cout << "Estado: " << (getEstadoVenta() ? "Activo" : "Inactivo") << endl;
 }
