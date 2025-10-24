@@ -81,7 +81,7 @@ void DetalleCompra::cargar() {
 }
 
 
-void DetalleCompra::mostrar() const {
+void DetalleCompra::mostrar() {
     cout << "ID Compra: " << getIDCompra() << endl;
     cout << "ID Producto: " << getIDProducto() << endl;
     cout << "Cantidad: " << getCantidad() << endl;
@@ -89,7 +89,7 @@ void DetalleCompra::mostrar() const {
     cout << "Estado: " << (getEstadoDetalleCompra() ? "Activo" : "Inactivo") << endl;
 }
 
-// Guardar en disco
+
 bool DetalleCompra::escribirDisco(int pos) {
     FILE* p = fopen("detallecompra.dat", "rb+");
     if (p == nullptr) return false;
@@ -99,7 +99,7 @@ bool DetalleCompra::escribirDisco(int pos) {
     return ok;
 }
 
-// Leer desde disco
+
 bool DetalleCompra::leerDisco(int pos) {
     FILE* p = fopen("detallecompra.dat", "rb");
     if (p == nullptr) return false;
@@ -108,4 +108,3 @@ bool DetalleCompra::leerDisco(int pos) {
     fclose(p);
     return ok;
 }
-
