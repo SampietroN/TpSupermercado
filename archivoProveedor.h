@@ -7,3 +7,6 @@ int buscarEProveedorCuit(const char* Cuit);
 bool altaBajaProveedor(int posicion);
 
 #endif // ARCHIVOPROVEEDOR_H_INCLUDED
+
+//modificacion
+
