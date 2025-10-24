@@ -70,7 +70,7 @@ void Compra::cargar() {
     setIDProveedor(idProv);
 
     cout << "Fecha de la compra:" << endl;
-    fecha.cargar();  
+    fecha.Cargar();
     setFechaCompra(fecha);
 
     cout << "Total de la compra: ";
@@ -81,11 +81,11 @@ void Compra::cargar() {
 }
 
 
-void Compra::mostrar() const {
+void Compra::mostrar(){
     cout << "ID Compra: " << getIDCompra() << endl;
     cout << "ID Proveedor: " << getIDProveedor() << endl;
     cout << "Fecha: ";
-    getFechaCompra().mostrar();
+    getFechaCompra().Mostrar();
     cout << "Total: $" << getTotalCompra() << endl;
     cout << "Estado: " << (getEstadoCompra() ? "Activo" : "Inactivo") << endl;
 }
@@ -109,4 +109,3 @@ bool Compra::leerDisco(int pos) {
     fclose(p);
     return ok;
 }
-
