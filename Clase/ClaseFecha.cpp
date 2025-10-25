@@ -18,7 +18,7 @@ Fecha::Fecha(){
 }
 
 Fecha::Fecha(int diaInput, int mesInput, int anioInput){
-    if(anioInput>2000){     //revision aÒo
+    if(anioInput>2000){     //revision a√±o
         if(mesInput<13 && mesInput>0){    //revision de mes
             if(diaInput>0 && diaInput<32){    //revision de dias
                 if(diaInput==31){    //meses de 30 dias
