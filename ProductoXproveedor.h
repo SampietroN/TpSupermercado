@@ -22,12 +22,13 @@ public:
     int getIDProveedor() const;
     float getPrecioCosto() const;
 
-    // Funcionales
+    
     void cargar();
-    void mostrar() const;
+    void mostrar();
     bool escribirDisco();
     bool leerDisco(int pos);
 };
+
 
 
 
