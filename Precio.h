@@ -25,10 +25,11 @@ public:
 
     // Metodos
     void cargar();
-    void mostrar() const;
+    void mostrar();
     bool escribirDisco(int pos);
     bool leerDisco(int pos);
 };
+
 
 
 
