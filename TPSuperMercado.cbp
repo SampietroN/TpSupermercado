@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="TPSuperMercado" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/TPSuperMercado" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/TPSuperMercado" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="ClaseDireccion.cpp" />
+		<Unit filename="ClaseDireccion.h" />
+		<Unit filename="ClaseFecha.cpp" />
+		<Unit filename="ClaseFecha.h" />
+		<Unit filename="ClasePersona.cpp" />
+		<Unit filename="ClasePersona.h" />
+		<Unit filename="Cliente.cpp" />
+		<Unit filename="Cliente.h" />
+		<Unit filename="Compra.cpp" />
+		<Unit filename="Compra.h" />
+		<Unit filename="DetalleCompra.cpp" />
+		<Unit filename="DetalleCompra.h" />
+		<Unit filename="DetalleVenta.cpp" />
+		<Unit filename="DetalleVenta.h" />
+		<Unit filename="Empleado.cpp" />
+		<Unit filename="Empleado.h" />
+		<Unit filename="FuncionesAuxiliares.cpp" />
+		<Unit filename="FuncionesAuxiliares.h" />
+		<Unit filename="Precio.cpp" />
+		<Unit filename="Precio.h" />
+		<Unit filename="ProductoXproveedor.cpp" />
+		<Unit filename="ProductoXproveedor.h" />
+		<Unit filename="Proveedor.cpp" />
+		<Unit filename="Proveedor.h" />
+		<Unit filename="Venta.cpp" />
+		<Unit filename="Venta.h" />
+		<Unit filename="archivoCliente.cpp" />
+		<Unit filename="archivoCliente.h" />
+		<Unit filename="archivoEmpleado.cpp" />
+		<Unit filename="archivoEmpleado.h" />
+		<Unit filename="archivoProveedor.cpp" />
+		<Unit filename="archivoProveedor.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="menues.cpp" />
+		<Unit filename="menues.h" />
+		<Unit filename="productos.cpp" />
+		<Unit filename="productos.h" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
